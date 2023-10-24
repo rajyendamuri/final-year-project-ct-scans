@@ -14,18 +14,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 1), scene);
 
-    const ground = new BABYLON.MeshBuilder.CreateGroundFromHeightMap('', './xray.png', {
-      height: 10,
-      width: 10,
-      depth: 10,
-      subdivisions: 1000   
-    })
+    // const ground = new BABYLON.MeshBuilder.CreateGroundFromHeightMap('', './xray.png', {
+    //   height: 10,
+    //   width: 10,
+    //   depth: 10,
+    //   subdivisions: 1000   
+    // })
 
-    // const ground = BABYLON.MeshBuilder.CreateSphere("ground", {
-    //   diameter: 20,
-    //   tessellation: 100,
-    //   sideOrientation: BABYLON.Mesh.FRONTSIDE
-    // }, scene);
+    const ground = BABYLON.MeshBuilder.CreateSphere("ground", {
+      diameter: 20,
+      tessellation: 100,
+    }, scene);
     
     
     // const heightmapTexture = new BABYLON.Texture("heightmap2.png", scene);
@@ -113,6 +112,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const material2 = new BABYLON.StandardMaterial("material2", scene);
     material2.diffuseColor = new BABYLON.Color3(0,1,10); 
     ball.material = material2;
+    ground.material = material2;
 
     donut.position = new BABYLON.Vector3(0, 11, 0);
     donut1.position = new BABYLON.Vector3(0, 12, 0);
