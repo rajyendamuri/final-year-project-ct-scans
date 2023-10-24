@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 1), scene);
 
-    const ground = new BABYLON.MeshBuilder.CreateGroundFromHeightMap('', '/xray.png', {
+    const ground = new BABYLON.MeshBuilder.CreateGroundFromHeightMap('', '/final-year-project-ct-scans/xray.png', {
       height: 10,
       width: 10,
       depth: 10,
