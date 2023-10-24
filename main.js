@@ -69,57 +69,57 @@ document.addEventListener('DOMContentLoaded', async () => {
     // `;  
     
 
-    // const donut = BABYLON.MeshBuilder.CreateTorus("donut", { 
-    //   diameter: 3,
-    //   tessellation: 100,
-    //   thickness: 0.2
-    // }, scene);
-    // const donut1 = BABYLON.MeshBuilder.CreateTorus("donut1", { 
-    //   diameter: 2.33,
-    //   tessellation: 100,
-    //   thickness: 0.2
-    // }, scene);
-    // const donut2 = BABYLON.MeshBuilder.CreateTorus("donut2", { 
-    //   diameter: 1.66,
-    //   tessellation: 100,
-    //   thickness: 0.2
-    // }, scene);
-    // const donut3 = BABYLON.MeshBuilder.CreateTorus("donut3", { 
-    //   diameter: 1,
-    //   tessellation: 100,
-    //   thickness: 0.2
-    // }, scene);
-    // const disc = BABYLON.MeshBuilder.CreateSphere("disc", { 
-    //   diameterX: 3,
-    //   diameterY: 0.7,
-    //   diameterZ: 3,
-    //   tessellation: 100
-    // }, scene);
-    // const ball = BABYLON.MeshBuilder.CreateSphere("ball", { 
-    //   tessellation: 100
-    // }, scene);
+    const donut = BABYLON.MeshBuilder.CreateTorus("donut", { 
+      diameter: 3,
+      tessellation: 100,
+      thickness: 0.2
+    }, scene);
+    const donut1 = BABYLON.MeshBuilder.CreateTorus("donut1", { 
+      diameter: 2.33,
+      tessellation: 100,
+      thickness: 0.2
+    }, scene);
+    const donut2 = BABYLON.MeshBuilder.CreateTorus("donut2", { 
+      diameter: 1.66,
+      tessellation: 100,
+      thickness: 0.2
+    }, scene);
+    const donut3 = BABYLON.MeshBuilder.CreateTorus("donut3", { 
+      diameter: 1,
+      tessellation: 100,
+      thickness: 0.2
+    }, scene);
+    const disc = BABYLON.MeshBuilder.CreateSphere("disc", { 
+      diameterX: 3,
+      diameterY: 0.7,
+      diameterZ: 3,
+      tessellation: 100
+    }, scene);
+    const ball = BABYLON.MeshBuilder.CreateSphere("ball", { 
+      tessellation: 100
+    }, scene);
 
-    // const material = new BABYLON.StandardMaterial("material", scene);
-    // material.diffuseColor = new BABYLON.Color3(1,2,5); 
-    // donut.material = material;
-    // donut1.material = material;
-    // donut2.material = material;
-    // donut3.material = material;
+    const material = new BABYLON.StandardMaterial("material", scene);
+    material.diffuseColor = new BABYLON.Color3(1,2,5); 
+    donut.material = material;
+    donut1.material = material;
+    donut2.material = material;
+    donut3.material = material;
 
-    // const material1 = new BABYLON.StandardMaterial("material2", scene);
-    // material1.diffuseColor = new BABYLON.Color3(1,5,1); 
-    // disc.material = material1;
+    const material1 = new BABYLON.StandardMaterial("material2", scene);
+    material1.diffuseColor = new BABYLON.Color3(1,5,1); 
+    disc.material = material1;
 
-    // const material2 = new BABYLON.StandardMaterial("material2", scene);
-    // material2.diffuseColor = new BABYLON.Color3(0,1,10); 
-    // ball.material = material2;
+    const material2 = new BABYLON.StandardMaterial("material2", scene);
+    material2.diffuseColor = new BABYLON.Color3(0,1,10); 
+    ball.material = material2;
 
-    // donut.position = new BABYLON.Vector3(0, 11, 0);
-    // donut1.position = new BABYLON.Vector3(0, 12, 0);
-    // donut2.position = new BABYLON.Vector3(0, 13, 0);
-    // donut3.position = new BABYLON.Vector3(0, 14, 0);
-    // disc.position = new BABYLON.Vector3(0, 15, 0);
-    // ball.position = new BABYLON.Vector3(0, 15.5, 0);
+    donut.position = new BABYLON.Vector3(0, 11, 0);
+    donut1.position = new BABYLON.Vector3(0, 12, 0);
+    donut2.position = new BABYLON.Vector3(0, 13, 0);
+    donut3.position = new BABYLON.Vector3(0, 14, 0);
+    disc.position = new BABYLON.Vector3(0, 15, 0);
+    ball.position = new BABYLON.Vector3(0, 15.5, 0);
 
     return scene;
   };
